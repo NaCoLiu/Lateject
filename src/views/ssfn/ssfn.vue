@@ -17,7 +17,7 @@
 import { ref } from 'vue';
 import { NButton, NIcon, useMessage } from 'naive-ui';
 import { AddCircle } from '@vicons/ionicons5';
-import { bat } from '../../utils/cmd';
+
 let ssfn = ref('');
 
 const msg = useMessage()
@@ -30,22 +30,7 @@ var rf = require("fs");
 
 
 let submit = () => {
-    bat('./public/cmd_command.data', (res: { error: string, stdout: string, stderr: string }) => {
-         console.log(res)
-        if (res.error?.toString().indexOf('Command failed')) {
-            msg.error('Unfind Steam install location')
-            return
-        }
-        // console.log(res.stdout)
-        if (res.stdout != null) {
-
-           console.log(res)
-
-
-
-        }
-    })
-
+   
 }
 
 </script> 
