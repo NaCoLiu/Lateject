@@ -17,3 +17,16 @@
 
 
 
+## Code Preview
+
+```
+func
+-----------------
+public/cmd_command.bat // exec bat command [执行bat脚本]
+/src/utils/cmd.ts // nodejs cmd implement func [nodejs cmd执行封装]
+
+UI
+-----------------
+/views/ssfn // ssfn authorize module [ssfn 授权UI视图]
+/views/steamCodeConvert // steam Code Convert [好友代码转换]
+```
