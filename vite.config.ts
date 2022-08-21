@@ -16,6 +16,11 @@ export default defineConfig({
       '*': path.resolve('')
     }
   },
+  build: {
+    target: "es2020",
+    brotliSize: false,
+    chunkSizeWarningLimit: 2000
+  },
   plugins: [
     vue(),
 

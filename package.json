@@ -1,6 +1,6 @@
 {
   "name": "lateject",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "main": "dist/electron/main/index.js",
   "description": "steam tools",
   "author": "naco@nco.im",
@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && electron-builder"
+    "build": "vue-tsc --noEmit && vite build && electron-builder --win --ia32"
   },
   "engines": {
     "node": ">=14.17.0"
@@ -39,7 +39,6 @@
     "vue"
   ],
   "dependencies": {
-    "@vueuse/core": "^9.1.0",
     "iconv-lite": "^0.6.3",
     "node-cmd": "^5.0.0"
   }
