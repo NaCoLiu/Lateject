@@ -1,8 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
-    { path: '/', redirect: '/home' },
-    { path: '/home', component: () => import('../views/home.vue') },
-    { path: '/ssfn', component: () => import('../views/ssfn/ssfn.vue') },
+    { path: '/', redirect: '/home',name:'Home' },
+    { path: '/home', component: () => import('../views/home.vue'),name:'Home' },
+    { path: '/ssfn', component: () => import('../views/ssfn/index.vue') ,name:'ssfn'},
+    { path: '/steamCodeConvert', component: () => import('../views/steamCodeConvert/index.vue'),name:'steam Code Convert' },
 ]
 
 const router = createRouter({

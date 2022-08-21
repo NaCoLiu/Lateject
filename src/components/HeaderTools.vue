@@ -2,6 +2,8 @@
 import { ipcRenderer } from 'electron';
 import { NIcon } from 'naive-ui';
 import { CloseOutline, RemoveOutline } from '@vicons/ionicons5'
+import { watch, ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 
 let close = (): void => {
     ipcRenderer.send('close')
@@ -11,13 +13,22 @@ let min = (): void => {
     ipcRenderer.send('min')
 }
 
+let title = ref('');
+const router = useRouter();
+console.log('router:', router.currentRoute.value.name);
+onMounted(() => {
+    watch(() => router, () => {
+        title.value = router.currentRoute.value.name as string;
+    }, { deep: true })
+})
+
 
 </script>
 
 <template>
     <div class="headerTools">
         <div class="title">
-            Lateject
+            Lateject : {{ title }}
         </div>
         <div class="control">
             <div class="minimize" @click="min">

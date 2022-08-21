@@ -6,12 +6,14 @@ import electron from 'vite-plugin-electron'
 import pkg from './package.json'
 
 rmSync('dist', { recursive: true, force: true }) // v14.14.0
-
+import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
     alias: {
-      'vue': "vue/dist/vue.esm-bundler.js"
+      'vue': "vue/dist/vue.esm-bundler.js",
+      '@': path.resolve(__dirname, './src'),
+      '*': path.resolve('')
     }
   },
   plugins: [

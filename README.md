@@ -29,4 +29,7 @@ UI
 -----------------
 /views/ssfn // ssfn authorize module [ssfn 授权UI视图]
 /views/steamCodeConvert // steam Code Convert [好友代码转换]
+
+wiki: https://developer.valvesoftware.com/wiki/Steam_Web_API#GetPlayerSummaries_.28v0001.29
+
 ```

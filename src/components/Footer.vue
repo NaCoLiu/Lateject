@@ -21,6 +21,7 @@
     padding: 0 5px;
     box-sizing: border-box;
     color: gray;
-    font-family: consolas, 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-family: consolas, 'Courier New', Courier, monospace !important;
 }
 </style>

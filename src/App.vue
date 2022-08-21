@@ -8,15 +8,8 @@ import logo from '/favicon.ico'
 import { renderIcon, otherBrowOpen } from './utils';
 import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { cmd } from './utils/cmd';
+
 const menuActiveKey = ref('home');
-
-
-onMounted(() => { // 初始化
-  cmd("chcp 65001", (res: any) => {
-    console.log(res)
-  })
-})
 
 const menuOptions: MenuOption[] = [
   {
@@ -56,7 +49,7 @@ let checkInItem = () => {
         <n-layout-sider bordered collapse-mode="width" :width="60">
           <n-menu :collapsed="false" :collapsed-icon-size="50" :options="menuOptions" :value="menuActiveKey"
             :on-update:value="onCheckItem" default-value="home" @click="checkInItem()" />
-          <div class="logo" @click="otherBrowOpen('https://github.com/nacoliu')">
+          <div class="logo" @click="otherBrowOpen('https://github.com/NaCoLiu/Lateject')">
             <img :src="logo" alt="lateject" />
           </div>
         </n-layout-sider>
@@ -85,6 +78,8 @@ let checkInItem = () => {
 }
 
 body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -115,6 +110,10 @@ body {
 
 }
 
+.page {
+  height: 100%;
+}
+
 #app {
   box-shadow: 0 0 3px #d8d8d8;
   display: flex;
@@ -126,7 +125,8 @@ body {
   border-radius: 5px;
   backdrop-filter: blur(10px);
   background: rgba(54, 54, 54, 0.9);
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -167,5 +167,15 @@ body {
       }
     }
   }
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
 </style>

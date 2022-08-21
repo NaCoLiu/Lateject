@@ -1,5 +1,8 @@
 <template>
-    <div class="page-content">
+    <div class="page-content ssfn-content">
+        <div class="building">
+            <span>func Building / 建设中</span>
+        </div>
         <h2>SSFN Steam Authorization</h2>
         <input type="text" placeholder="ssfn" :v-model:value="ssfn" class="ssfn">
         <n-button type="info" class="auth" @click="submit">
@@ -18,34 +21,55 @@ import { ref } from 'vue';
 import { NButton, NIcon, useMessage } from 'naive-ui';
 import { AddCircle } from '@vicons/ionicons5';
 
+
 let ssfn = ref('');
 
 const msg = useMessage()
 let steamDir = ref('');
 
-var rf = require("fs");
+var rf = require("fs"); 
 
 
 
 
 
 let submit = () => {
-   
+
 }
 
 </script> 
 
 <style lang="scss">
-.page-content {
+.building {
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    color: red;
+    overflow: hidden;
+   
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    pointer-events: painted;
+    background-color: rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    span {
+        border: 5px solid red;
+        border-radius: 10px;
+        padding: 5px 20px;
+        transform: rotate3d(-2, -2, 0, -35deg);
+    }
+}
 
+.ssfn-content {
+   
     h2 {
         margin-top: 45px;
-        font-family: 'Courier New', Courier, monospace;
+       
     }
 
     .ssfn {
@@ -55,7 +79,7 @@ let submit = () => {
         width: 75%;
         border: 1px solid #d8d8d8;
         border-radius: 5px;
-        font-family: 'Courier New', Courier, monospace;
+       
         font-weight: bold;
     }
 

@@ -8,14 +8,17 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "strict": true,
-    "paths": {},
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "types": ["naive-ui/volar"]
   },
   "references": [
     { "path": "./tsconfig.node.json" }
+    
   ]
 }
