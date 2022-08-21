@@ -1,8 +1,8 @@
 # lateject steam tools
 
-🥳 Really simple `ssfn` + `steamCodeConvert` tools. 
+🥳 Really simple `ssfn` + `steamCodeConvert` tools.  If you have good needs / feature, please contact me
 
- SSFN 一键授权 / Valve Game invitation code [游戏好友代码转换] 转换
+ SSFN 一键授权 / Valve Game invitation code [游戏好友代码转换] 转换 / 如果您有好的需求欢迎联系我
 
 [![awesome-vite](https://awesome.re/mentioned-badge.svg)]()
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ae3863e3-1aec-4eb1-8f9f-1890af56929d/deploy-status)]()
