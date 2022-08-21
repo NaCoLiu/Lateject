@@ -19,6 +19,15 @@
 🖥 only for windows
 
 
+# i18n / 国际化 
+
+En / Zh / Ru
+
+[Need help translating] (Please contact me directly naco@nco.im)
+
+[需要帮忙翻译] (请直接联系我 naco@nco.im )
+
+[требуется помощь переводчика ] ( Пожалуйста, свяжитесь со мной напрямую  naco@nco.im )
 
 ## Code Preview
 
