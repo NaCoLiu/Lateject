@@ -10,7 +10,10 @@
 
 
 ## Features
-[![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/readme.png)](https://nco.im)
+### Home
+[![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/readme.png)](https://github.com/NaCoLiu/Lateject/releases)
+### steamCodeConvert
+[![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/code.png)](https://github.com/NaCoLiu/Lateject/releases)
 
 📦 easy use  
 🖥 only for windows
