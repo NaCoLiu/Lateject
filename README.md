@@ -44,3 +44,7 @@ UI
 wiki: https://developer.valvesoftware.com/wiki/Steam_Web_API#GetPlayerSummaries_.28v0001.29
 
 ```
+
+### 介于业内有很多写授权器带毒的这里晒一下卡巴查杀地址 (开源就不怕查) [PS: 你写个自动授权连win安全中心都过不去能不能带点脑子？]
+
+https://opentip.kaspersky.com/C035A253F9B57565096BDF82EB14C1A6E6CBA0F996324D075EEAF94FE8040692/
