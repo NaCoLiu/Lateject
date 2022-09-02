@@ -9,8 +9,7 @@
 
 
 ## Features
-### Home
-[![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/readme.png)](https://github.com/NaCoLiu/Lateject/releases)
+
 ### SteamCodeConvert
 [![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/code.png)](https://github.com/NaCoLiu/Lateject/releases)
 
