@@ -1,4 +1,4 @@
-# lateject steam tools
+# Lateject steam tools
 
 🥳 Really simple `ssfn` + `steamCodeConvert` tools.  If you have good needs / feature, please contact me
 
@@ -11,7 +11,7 @@
 ## Features
 ### Home
 [![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/readme.png)](https://github.com/NaCoLiu/Lateject/releases)
-### steamCodeConvert
+### SteamCodeConvert
 [![preview](https://raw.githubusercontent.com/NaCoLiu/Lateject/main/code.png)](https://github.com/NaCoLiu/Lateject/releases)
 
 📦 easy use  
